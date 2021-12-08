@@ -1,0 +1,28 @@
+<table class="table table-ligth animate__animated animate__fadeIn animate__delay-.3s">
+    <thead>
+        <tr class="animate__animated animate__fadeInRight animate__delay-.3s">
+            <th *ngFor="let titulo of titulos; let i = index" class="">{{ titulo }}</th>
+        </tr>
+    </thead>
+    <tbody class="shadow">
+        <tr *ngFor="let coin of coins; let i = index" class="animate__animated animate__fadeIn animate__delay-.3s">
+            <td class="text-muted">
+                {{ i + 1 }}
+            </td>
+            <td>
+                <img [src]="coin.image" alt="{{coin.name}}" style="width: 2rem">
+                <span class="ms-5">{{coin.name}}</span>
+                <span class="ms-2 text-muted fw-bold text-uppercase d-none d-md-inline">{{coin.symbol}}</span>
+            </td>
+            <td>
+                {{coin.current_price | currency}} US
+            </td>
+            <td [ngClass]="coin.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'">
+                {{coin.price_change_percentage_24h.toLocaleString()}}%
+            </td>
+            <td>
+                {{coin.total_volume.toLocaleString()}} US
+            </td>
+        </tr>
+    </tbody>
+</table>

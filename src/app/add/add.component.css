@@ -1,0 +1,19 @@
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 25rem;
+}
+
+input {
+    box-shadow: none !important;
+    padding-inline: 1rem !important;
+}
+
+label {
+    padding-inline: 1rem !important;
+    font-size: 15px !important;
+}

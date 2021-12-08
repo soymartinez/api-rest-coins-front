@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_rest_front=self.webpackChunkapi_rest_front||[]).push([[1855],{1855:(M,E,_)=>{_.r(E),_.d(E,{ion_modal:()=>s.M});var s=_(7989);_(1035),_(5466),_(1240),_(4751),_(7286),_(788)}}]);
